@@ -30,6 +30,23 @@
         8. button - 
         9. div - 
      -->
+    
+        <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cam Hoa</td>
+                <td>Da Nang</td>
+            </tr>
+        </tbody>
+    </table>
+    
 </body>
 </html>
 ```
