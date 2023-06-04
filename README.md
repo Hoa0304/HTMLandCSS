@@ -1,35 +1,8 @@
-# HTMLandCSS
+# CSS selectors?
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-</head>
-<body>
-   
-    <!-- HTML là chữ viết tắt của Hypertext Markup Language. Nó giúp người dùng tạo và cấu trúc các thành phần
-    trong trang web hoặc ứng dụng, phân chia các đoạn văn, heading, links, blockquotes, vv...
+## ID and Class?  
 
-    CSS là ngôn ngữ tạo phong cách cho trang web-Caccading Style Sheet language. Nó dùng để tạo phong cách
-    và định kiểu cho những yếu tố được viết dưới dạng ngôn ngữ đánh dấu, như là HTML.-->
+- Chỉ ai được đặt ```id``` mới thay đổi các attribute , định danh duy nhất (chỉ xuất hiện được 1 lần ) không được phép đặt 2 id giống hệt nhau trong cùng 1 file html
+- Muốn sử dụng 1 attribute css chung cho nhiều đối tượng khác nhau thì use ```class```
 
-    <!-- 'ctrl' + '+' + '/' : comment -->
-
-    <!-- 
-        1. h1-h6 : heading : tiêu đề
-        2. p : paragraph
-        3. img : image
-        4. a - anchor : neo liên kết 
-        5. ul, li - thẻ ds tùy ý sx, list item
-        6. table - 
-        7. input - 
-        8. button - 
-        9. div - 
-     -->
-</body>
-</html>
-```
+> Khi select đến id thì use # còn select đến class thì use ```.```
