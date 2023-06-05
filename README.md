@@ -28,3 +28,13 @@
 ```html
 <h1 style="color: blueviolet;">Trần Thị Cẩm Hoa</h1>
 ```
+
+# Priority?
+
+1. Internal, External ?
+2. Inline - 1000
+3. #id - 100
+4. .class - 10
+5. tag - 1
+6. Equal specificity?
+7. Universal selector and inherited?
