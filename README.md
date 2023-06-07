@@ -52,4 +52,7 @@ giống nhau nhma cái nào mới hơn thì dc ưu tiên hơn
 }
 ```
 > Thì ```blue``` được thực hiện
+- Tích hợp giữa ```id``` và ```class``` và ```tag``` bỏ qua ```Inline``` vì nó quá mạnh
 7. Universal selector and inherited?
+- Điểm Universal: 0
+- inherited : kế thừa : 0
