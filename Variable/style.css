@@ -1,0 +1,13 @@
+:root {
+    --text-color : violet;
+}
+<!--lớp giả root đgl global-toàn cục dc use ở mọi nơi trg file css-->
+
+h1 {
+    --my-color: green;
+    color: var(--my-color);
+}
+p {
+    color: var(--text-color);
+}
+<!--đặt theo local-use trg selector cụ thể-->
