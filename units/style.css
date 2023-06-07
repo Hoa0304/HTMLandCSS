@@ -1,0 +1,14 @@
+html {
+    font-size: 20px;
+}
+.box {
+    width: 50%;
+    height: 100px;
+    background-color: blueviolet;
+}
+h1 {
+    font-size: 2rem;
+    /* 1rem = 20px
+    2rem = 40px 
+    rem phhụ thuộc vào thẻ html*/
+}
