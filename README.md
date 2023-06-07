@@ -36,6 +36,7 @@
 2. Inline - 1000
 3. #id - 100
 4. .class - 10
-5. tag - 1
+5. tag - 1 ``` gọi thẳng cái tên của thẻ (VD: h1)```
+- Cách nào nhiều điểm hơn thì được ưu tiên hơn
 6. Equal specificity?
 7. Universal selector and inherited?
