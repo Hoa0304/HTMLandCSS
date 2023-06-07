@@ -42,4 +42,14 @@
 5. tag - 1 ``` gọi thẳng cái tên của thẻ (VD: h1)```
 - Cách nào nhiều điểm hơn thì được ưu tiên hơn
 6. Equal specificity?
+giống nhau nhma cái nào mới hơn thì dc ưu tiên hơn
+```html
+#heading-id {
+    color: violet;
+}
+#heading-id {
+    color: blue;
+}
+```
+> Thì ```blue``` được thực hiện
 7. Universal selector and inherited?
