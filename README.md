@@ -34,6 +34,9 @@
 1. Internal, External ?
 > Không có sự ưu tiên , đứa nào gọi sau thì ưu tiên đứa đó (ai viết css mới hơn)
 2. Inline - 1000
+```html
+<h1 style="color: blue;">.....</h1>
+```
 3. #id - 100
 4. .class - 10
 5. tag - 1 ``` gọi thẳng cái tên của thẻ (VD: h1)```
