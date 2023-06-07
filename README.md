@@ -31,6 +31,7 @@
 
 # Priority?
 
+
 1. Internal, External ?
 > Không có sự ưu tiên , đứa nào gọi sau thì ưu tiên đứa đó (ai viết css mới hơn)
 2. Inline - 1000
@@ -50,6 +51,7 @@ giống nhau nhma cái nào mới hơn thì dc ưu tiên hơn
 #heading-id {
     color: blue;
 }
+
 ```
 > Thì ```blue``` được thực hiện
 - Tích hợp giữa ```id``` và ```class``` và ```tag``` bỏ qua ```Inline``` vì nó quá mạnh
