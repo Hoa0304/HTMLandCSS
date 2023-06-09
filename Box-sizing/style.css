@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+}
+
+.box {
+    width: 200px;
+    width: 200px;
+    color: black;
+    background-color: chartreuse;
+    padding: 20px;
+    border: 2px solid #251196;
+    box-sizing: border-box;
+    /* Tự động tính toán  */
+}
+
+.box {
+    box-sizing: unset;
+    /*Ghi đè lên để hủy-Tự động hủy cái box-sizing: border-box; */
+}
