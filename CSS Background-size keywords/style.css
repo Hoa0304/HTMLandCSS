@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(255,255,0, 0.5), rgba(0, 223, 0, 0.5)),
+    url('https://th.bing.com/th/id/R.a120c77950d0515fb9a4f476c4e8602f?rik=99ea%2bVx3Am45zg&pid=ImgRaw&r=0'),
+    url('https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/326716330_1216381365924486_5010560332914761138_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=AfGfanQyNMgAX-L7CRC&_nc_ht=scontent.fdad1-4.fna&oh=00_AfB_c-zlhB-B-YnAI7J_2-cq6skPuvGq5G1xOGkhnQmEuA&oe=648982C2');
+    /* Ảnh nào link trc thì hiện trc đè lên mấy hình sau */
+    background-repeat: no-repeat;
+    
+    /* Mất đi thuộc tính lặp lại */
+    /* repeat-x : lặp lại chiều ngang
+    repeat-y : lặp lại chiều dọc */
+    background-size: contain;
+    /* Chiều dài nhất có thể , k chấp nhận ảnh bị che khuất*/
+}
+.go {
+    background-size: cover;
+    /* Chọn chiều của bất ảnh , chấp nhận ảnh bị che khuất */
+}
+
+
