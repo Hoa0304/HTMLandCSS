@@ -29,16 +29,57 @@
         </ul>
         <h2>2. Relative units?</h2>
         <!--Tuong doi , mang tính kế thừa-->
+
         
         <ul>
             <li>%</li>
             <!--phụ thuộc vào thằng chứa nó-->
-            <li>rem</li>
+            <li>rem phụ thuộc vào thẻ html</li>
             <li>em phụ thuộc vào thẻ gần nhất chứa nó</li>
             <li>vw - viewport width</li>
             <li>vh - viewport height</li>
             <li>vmin</li>
         </ul>
+        
+Trong lập trình web, "px" và "rem" đều là đơn vị đo kích thước trong CSS, nhưng chúng có cách hoạt động và ứng dụng khác nhau.
+
+1. px (Pixel): "px" đại diện cho pixel, đây là đơn vị đo tuyệt đối và không thay đổi theo kích thước của các yếu tố khác. 
+Khi bạn đặt kích thước bằng pixel, nó sẽ giữ nguyên giá trị đó bất kể kích thước của phần tử cha hoặc các thiết bị hiển thị khác nhau.
+        Ví dụ: `font-size: 16px;` sẽ thiết lập kích thước chữ là 16 pixel.
+
+2. rem (Root Em): "rem" đại diện cho "root em" và được tính dựa trên kích thước của phần tử gốc (thường là thẻ `<html>`). 
+    Giá trị của "rem" thay đổi theo kích thước của phần tử gốc, vì vậy nó có thể thích ứng với kích thước của màn hình hoặc phần tử cha.
+    Ví dụ: Nếu bạn đặt `font-size: 1.5rem;` cho một phần tử con, và phần tử gốc có kích thước chữ là 16 pixel, thì kích thước chữ 
+    của phần tử con sẽ là 24 pixel (1.5 lần kích thước của phần tử gốc).
+
+Sự khác biệt chính giữa "px" và "rem" là "px" là đơn vị đo tuyệt đối, trong khi "rem" là đơn vị đo tương đối theo phần tử gốc. 
+    "rem" thường được sử dụng để tạo ra các thiết kế linh hoạt và dễ dàng thay đổi kích thước trên các thiết bị khác nhau.
+
+Tóm lại, "px" thích hợp khi bạn muốn đặt một kích thước cố định và không thay đổi, trong khi "rem" thích hợp cho việc tạo ra các 
+    thiết kế linh hoạt và thích ứng với kích thước màn hình hoặc phần tử cha.
+
+
+
+
+    Khi làm việc với responsive design, "rem" có một số ưu điểm so với "px":
+
+1. Tính linh hoạt: Khi sử dụng "rem", kích thước của các phần tử sẽ tự động thích ứng với kích thước của phần tử gốc (thẻ `<html>`). Điều này cho phép bạn dễ dàng điều chỉnh kích thước các phần tử trên các thiết bị khác nhau mà không cần chỉnh sửa mã CSS. Nó giúp tạo ra một trang web linh hoạt và thích ứng với nhiều kích thước màn hình.
+
+2. Quản lý phân cấp: Khi sử dụng "rem", các phần tử con có thể dễ dàng thừa hưởng kích thước từ phần tử cha. Điều này cho phép bạn xây dựng cấu trúc phân cấp linh hoạt và dễ dàng thay đổi kích thước của tất cả các phần tử liên quan chỉ bằng cách thay đổi kích thước của phần tử gốc.
+
+3. Đơn giản và dễ đọc: So với sử dụng "px", việc sử dụng "rem" có thể làm mã CSS trở nên đơn giản hơn và dễ đọc hơn. Bạn chỉ cần đặt kích thước theo "rem" và quan tâm đến phần tử gốc. Việc tính toán kích thước theo các phần tử cha không cần thiết.
+
+Tuy nhiên, cần lưu ý rằng việc sử dụng "rem" cũng có một số hạn chế. Ví dụ, nếu bạn muốn đặt kích thước cho một phần tử cụ thể mà không bị ảnh hưởng bởi phần tử gốc, "rem" có thể không phù hợp và bạn có thể sử dụng "px" thay thế.
     </div>
+
+    Mặc dù "rem" có nhiều ưu điểm khi làm việc với responsive design, nó cũng có một số nhược điểm:
+
+1. Phụ thuộc vào phần tử gốc: Kích thước "rem" được tính dựa trên kích thước của phần tử gốc (thẻ `<html>`). Điều này đồng nghĩa với việc nếu bạn thay đổi kích thước của phần tử gốc, tất cả các phần tử sử dụng "rem" sẽ bị ảnh hưởng. Điều này có thể gây ra sự khó khăn trong việc quản lý và dự trù kích thước của các phần tử khi có sự thay đổi ngữ cảnh.
+
+2. Tính ổn định: Khi sử dụng "rem", có thể xảy ra hiện tượng nhảy giá trị kích thước khi phần tử gốc thay đổi kích thước. Điều này có thể gây ra sự nhảy đột ngột trong giao diện người dùng khi kích thước trang web thay đổi trong quá trình cuộn trang hoặc chuyển đổi giữa các thiết bị.
+
+3. Hạn chế sử dụng trong một số trường hợp: Một số thuộc tính CSS không hỗ trợ "rem" một cách tường minh, chẳng hạn như các thuộc tính liên quan đến hình dạng, padding, margin của các phần tử. Trong những trường hợp như vậy, việc sử dụng "rem" có thể gây khó khăn và bạn có thể cần sử dụng "px" thay thế.
+
+Tóm lại, mặc dù "rem" có nhiều lợi ích trong việc làm việc với responsive design, bạn cần cân nhắc nhược điểm của nó và đảm bảo áp dụng phù hợp trong từng trường hợp cụ thể.
 </body>
 </html>
